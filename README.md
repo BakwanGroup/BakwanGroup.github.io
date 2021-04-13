@@ -1,2 +1,0 @@
-# bakwan
-Kelompok B1
