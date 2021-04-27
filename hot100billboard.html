@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html style = "font-size: 16px;">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="Highly Effective People, &quot;Happiness is when what you think, what you say, and what you do are in harmony&quot;, Be Inspired. Be Inspiring., 10 Keys to Happier Living, Be a curator of your life, Positive Reminders, Contact Us!">
+    <meta name="description" content="">
+    <meta name="page_type" content="np-template-header-footer-from-plugin">
+    <title>Scraping</title>
+    <link rel="stylesheet" href="https://pamudyaputra.github.io/bakwan/nicepage.css" media="screen">
+    <link rel="stylesheet" href="https://pamudyaputra.github.io/bakwan/scraping.css" media="screen">
+    <script class="u-script" type="text/javascript" src="https://pamudyaputra.github.io/bakwan/jquery.js" defer=""></script>
+    <script class="u-script" type="text/javascript" src="https://pamudyaputra.github.io/bakwan/nicepage.js" defer=""></script>
+    <meta name="generator" content="Nicepage 3.11.0, nicepage.com">
+    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Arvo:400,400i,700,700i">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+        table th {
+            padding: 15px 35px;
+            border-left:1px solid #e0e0e0;
+            border-bottom: 1px solid #e0e0e0;
+            background: #ededed;
+            color:black;
+        }
+    </style>
+    
+    <script type="application/ld+json">{
+		"@context": "http://schema.org",
+		"@type": "Organization",
+		"name": "",
+		"url": "index.html",
+		"logo": "images/LOGO_1-01.png"
+  }</script>
+    <meta property="og:title" content="Home">
+    <meta property="og:type" content="website">
+    <meta name="theme-color" content="#bf795c">
+    <link rel="canonical" href="index.html">
+    <meta property="og:url" content="index.html">
+    
+    <title>Berita Terkini</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+  <style>
+    table th {
+        padding: 15px 35px;
+        border-left:1px solid #e0e0e0;
+        border-bottom: 1px solid #e0e0e0;
+        background: #ededed;
+    }
+  </style>
+  <!-- Import library JQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script type="text/javascript">
+        $(function(){
+
+            //Mengambil data dari file headline.txt dengan fungsi $.get() JQuery
+            $.get('hot100billboard.json', function(obj){
+                var str = "<table class=table>";
+                str+="<tr><th>No</th><th>Title</th><th>Artist</th><th>Albums</th><th>Time</th></tr>";
+
+                $.each(obj,function(n,data){
+                    str+="<tr><td>"+data.No+"</td>";
+                    str+="<td>"+data.Title+"</td>";
+                    str+="<td>"+data.Artist+"</td>";
+                    str+="<td><img width='150' height='150' src='"+data.Album+"'/></td>";
+                    str+="<td>"+data.Time+"</td></tr>";
+                });
+
+                str+="</table>";
+                $('#data_json').html(str);
+            });
+        });
+    </script>
+</head>
+<body class="u-body"><header class="u-clearfix u-header u-palette-2-dark-3 u-header" id="sec-a060"><div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+  <a href="Home.html" data-page-id="38942379" class="u-image u-logo u-image-1" data-image-width="1080" data-image-height="1080" title="Home">
+    <img src="images/LOGO_1-01.png" class="u-logo-image u-logo-image-1" data-image-width="80">
+  </a>
+  <nav class="u-menu u-menu-dropdown u-offcanvas u-menu-1">
+    <div class="menu-collapse">
+      <a class="u-button-style u-custom-text-active-color u-custom-text-color u-custom-text-hover-color u-nav-link" href="#">
+        <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#menu-hamburger"></use></svg>
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><symbol id="menu-hamburger" viewBox="0 0 16 16" style="width: 16px; height: 16px;"><rect y="1" width="16" height="2"></rect><rect y="7" width="16" height="2"></rect><rect y="13" width="16" height="2"></rect>
+</symbol>
+</defs></svg>
+      </a>
+    </div>
+    <div class="u-custom-menu u-nav-container">
+      <ul class="u-nav u-spacing-30 u-unstyled u-nav-1"><li class="u-nav-item"><a class="u-border-2 u-border-active-palette-1-base u-border-hover-palette-1-base u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-white u-text-hover-palette-4-light-2 u-text-palette-1-light-3" href="Home.html" style="padding: 10px 0px;">Home</a>
+</li><li class="u-nav-item"><a class="u-border-2 u-border-active-palette-1-base u-border-hover-palette-1-base u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-white u-text-hover-palette-4-light-2 u-text-palette-1-light-3" href="Profile.html" style="padding: 10px 0px;">Profile</a>
+</li><li class="u-nav-item"><a class="u-border-2 u-border-active-palette-1-base u-border-hover-palette-1-base u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-white u-text-hover-palette-4-light-2 u-text-palette-1-light-3" href="Contact.html" style="padding: 10px 0px;">Contact</a>
+</li><li class="u-nav-item"><a class="u-border-2 u-border-active-palette-1-base u-border-hover-palette-1-base u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-white u-text-hover-palette-4-light-2 u-text-palette-1-light-3" href="scraping.html" style="padding: 10px 0px;">Scraping</a>
+</li></ul>
+    </div>
+    <div class="u-custom-menu u-nav-container-collapse">
+      <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
+        <div class="u-sidenav-overflow">
+          <div class="u-menu-close"></div>
+          <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Home.html" style="padding: 10px 0px;">Home</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Profile.html" style="padding: 10px 0px;">Profile</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Contact.html" style="padding: 10px 0px;">Contact</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="scraping.html" style="padding: 10px 0px;">Scraping</a>
+</li></ul>
+        </div>
+      </div>
+    <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
+  </div>
+</nav>
+
+<div class="u-container-layout u-container-layout-2">
+  <h1 style="font-weight: bold;" align="center">Billboard 'The Hot 100'</h1>
+  <br />
+  <div id="data_json" class="form-group"></div>
+  <div class="form-group"></div>
+
+</div>
+  
+  <!-- <div class="container">
+    <h2 align="center">Berita Terkini Republika.co.id</h2>
+    <br />
+    <div id="data_json" class="form-group">
+        
+    </div>
+    <div class="form-group"></div>
+    </div> -->
+</body>
+</html>
