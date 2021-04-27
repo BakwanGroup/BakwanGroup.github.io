@@ -49,14 +49,14 @@
             //Mengambil data dari file headline.txt dengan fungsi $.get() JQuery
             $.get('headline.json', function(obj){
                 var str = "<table class=table>";
-                str+="<tr><th>No</th><th>Judul</th><th>Kategori</th><th>Waktu Publish</th><th>Date</th></tr>";
+                str+='<tr color = "#364c56;"><th>No</th><th>Judul</th><th>Kategori</th><th>Waktu Publish</th><th>Date</th></tr>';
 
                 $.each(obj,function(n,data){
-                    str+="<tr><td>"+(n+1)+"</td>";
-                    str+="<td>"+data.Headline+"</td>";
-                    str+="<td>"+data.Category+"</td>";
-                    str+="<td>"+data.Published+"</td>";
-                    str+="<td>"+data.Scrapped+"</td></tr>";
+                    str+='<tr><td style="text-align : center">'+(n+1)+'</td>';
+                    str+='<td>'+data.Headline+'</td>';
+                    str+='<td>'+data.Category+'</td>';
+                    str+='<td>'+data.Published+'</td>';
+                    str+='<td>'+data.Scrapped+'</td></tr>';
                 });
 
                 str+="</table>";
