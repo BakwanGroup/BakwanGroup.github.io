@@ -9,12 +9,13 @@ $.getJSON("data/data.json", function(result){
         }
 
         if(display == true) {
+            link = `https://pamudyaputra.github.io/bakwan/tubes/destination-detail.html?destination=${placeItem[i].name}`;
             document.getElementById("best-rated-place").innerHTML +=
                 `<div class="col-lg-3 col-sm-6">
                     <div class="trending_item clearfix">
                         <div class="trending_image"><img width="82px" height="76px" src="images/place/${placeItem[i].filename}" alt=""></div>
                         <div class="trending_content">
-                            <div class="trending_title"><a href="#">${placeItem[i].name}</a></div>
+                            <div class="trending_title"><a href="${link}">${placeItem[i].name}</a></div>
                             <div class="trending_price">${placeItem[i].loc.kabkot}</div>
                             <div class="trending_location">${placeItem[i].loc.prov}</div>
                             <div class="rating rating_${parseInt(placeItem[i].totalScore, 10)}">

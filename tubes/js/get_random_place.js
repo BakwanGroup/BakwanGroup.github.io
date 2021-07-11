@@ -18,7 +18,7 @@ $.getJSON("data/data.json", function(result){
         if(display == true) {
             address = (typeof placeItem[i].loc.address === 'undefined') ? "Tidak ada informasi terkait alamat" : placeItem[i].loc.address;
             prov = (typeof placeItem[i].loc.prov === 'undefined') ? "Tidak ada" : placeItem[i].loc.prov;
-            link = `http://localhost/TravelixTemplate/destination-detail.html?destination=${placeItem[i].name}`;
+            link = `https://pamudyaputra.github.io/bakwan/tubes/destination-detail.html?destination=${placeItem[i].name}`;
             document.getElementById("random_place").innerHTML +=
                 `<div class="col-lg-6 offers_col">
                     <div class="offers_item">

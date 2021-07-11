@@ -24,7 +24,7 @@ $.getJSON("data/data.json", function(result){
             datatosort.push(placeItem[i]);
             address = (typeof placeItem[i].loc.address === 'undefined') ? "Tidak ada informasi terkait alamat" : placeItem[i].loc.address;
             prov = (typeof placeItem[i].loc.prov === 'undefined') ? "Tidak ada" : placeItem[i].loc.prov;
-            link = `http://localhost/TravelixTemplate/destination-detail.html?destination=${placeItem[i].name}`;
+            link = `https://pamudyaputra.github.io/bakwan/tubes/destination-detail.html?destination=${placeItem[i].name}`;
             if(placeItem[i].totalScore > 4) ratingTxt = "Best";
             else if(placeItem[i].totalScore > 3) ratingTxt = "Very Good";
             else ratingTxt = "Good";
