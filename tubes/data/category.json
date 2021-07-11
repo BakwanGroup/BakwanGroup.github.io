@@ -1,0 +1,52 @@
+[
+    {
+        "name" : "Wisata Alam",
+        "info" : "",
+        "totalPlace" : 464
+    },
+    {
+        "name" : "Agrowisata",
+        "info" : "",
+        "totalPlace" : 28
+    },
+    {
+        "name" : "Wisata Konservasi",
+        "info" : "",
+        "totalPlace" : 38
+    },
+    {
+        "name" : "Wisata Kuliner",
+        "info" : "",
+        "totalPlace" : 83
+    },
+    {
+        "name" : "Wisata Heritage",
+        "info" : "",
+        "totalPlace" : 191
+    },
+    {
+        "name" : "Wisata Belanja",
+        "info" : "",
+        "totalPlace" : 84
+    },
+    {
+        "name" : "Wisata Budaya",
+        "info" : "",
+        "totalPlace" : 185
+    },
+    {
+        "name" : "Wisata Pendidikan",
+        "info" : "",
+        "totalPlace" : 101
+    },
+    {
+        "name" : "Wisata Buatan",
+        "info" : "",
+        "totalPlace" : 345
+    },
+    {
+        "name" : "Wisata Industri",
+        "info" : "",
+        "totalPlace" : 29
+    }
+]
