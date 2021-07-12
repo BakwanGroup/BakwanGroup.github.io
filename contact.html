@@ -27,7 +27,7 @@
 			message: $("#contact_form_message").val()
 		};
 
-		emailjs.send('wajisobri3_email', 'bakwangroup_template2', templateParams)
+		emailjs.send('wajisobri3_email', 'bakwangroup_ltemplate2', templateParams)
 			.then(function(response) {
 				alert('Email has been sent!');
 				console.log('SUCCESS!', response.status, response.text);
