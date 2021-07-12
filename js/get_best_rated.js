@@ -9,7 +9,7 @@ $.getJSON("data/data.json", function(result){
         }
 
         if(display == true) {
-            link = `https://pamudyaputra.github.io/bakwan/tubes/destination-detail.html?destination=${placeItem[i].name}`;
+            link = `https://bakwangroup.github.io/destination-detail.html?destination=${placeItem[i].name}`;
             document.getElementById("best-rated-place").innerHTML +=
                 `<div class="col-lg-3 col-sm-6">
                     <div class="trending_item clearfix">

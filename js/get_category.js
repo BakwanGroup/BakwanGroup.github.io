@@ -3,7 +3,7 @@ $.getJSON("data/category.json", function(result){
     var element = "";
     var count = 1;
     $.each(result, function(i){
-        link = `https://pamudyaputra.github.io/bakwan/tubes/category.html?name=${result[i].name}`;
+        link = `https://bakwangroup.github.io/category.html?name=${result[i].name}`;
         if(count == 1) {
             element += `<div class="row intro_items">`;
         }

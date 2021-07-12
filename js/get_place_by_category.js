@@ -24,7 +24,7 @@ $.getJSON("data/data.json", function(result){
             datatosort.push(placeItem[i]);
             address = (typeof placeItem[i].loc.address === 'undefined') ? "Tidak ada informasi terkait alamat" : placeItem[i].loc.address;
             prov = (typeof placeItem[i].loc.prov === 'undefined') ? "Tidak ada" : placeItem[i].loc.prov;
-            link = `https://pamudyaputra.github.io/bakwan/tubes/destination-detail.html?destination=${placeItem[i].name}`;
+            link = `https://bakwangroup.github.io/destination-detail.html?destination=${placeItem[i].name}`;
             if(typeof placeItem[i].reviewDistribution.oneStar === 'undefined') {
                 reviewCount = 0;
             } else {
