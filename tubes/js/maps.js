@@ -1,6 +1,10 @@
 //Variabel Global
 var ProvValue = [];
 
+$.ajaxSetup({
+  headers: { 'Access-Control-Allow-Origin': '*' }
+});
+
 $(function () {
     $.get('data/data.json', function (obj) {
         var Prov = ['Bali', 'Banten', 'Jawa Barat', 'Jawa Timur', 'Jakarta', 'Jawa Tengah', 'Yogyakarta'];
