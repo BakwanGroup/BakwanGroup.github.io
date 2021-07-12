@@ -133,7 +133,7 @@ $(function () {
             i++;
         });
 
-        console.log(ProvArr2);
+        // console.log(ProvArr2);
         // console.log(ProvArr);
 
         Highcharts.chart('Chart2', {
@@ -199,7 +199,7 @@ $(function () {
             });
         });
 
-        console.log(totalSkor);
+        // console.log(totalSkor);
 
         $.each(Prov, function(n, data){
             var total = 0;
