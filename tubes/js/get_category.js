@@ -11,7 +11,7 @@ $.getJSON("data/category.json", function(result){
             `<div class="col-lg-4 intro_col">
                 <div class="intro_item">
                     <div class="intro_item_overlay"></div>
-                    <div class="intro_item_background" style="background-image:url(images/unsplash/indonesia-beach.jpg)"></div>
+                    <div class="intro_item_background" style="background-image:url(images/unsplash/${i+1}.jpg)"></div>
                     <div class="intro_item_content d-flex flex-column align-items-center justify-content-center">
                         <div class="intro_date">${result[i].totalPlace} destination</div>
                         <div class="button intro_button"><div class="button_bcg"></div><a href="${link}">see more<span></span><span></span><span></span></a></div>
