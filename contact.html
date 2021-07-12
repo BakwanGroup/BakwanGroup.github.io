@@ -11,26 +11,31 @@
 <link href="plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" type="text/css" href="styles/contact_styles.css">
 <link rel="stylesheet" type="text/css" href="styles/contact_responsive.css">
-<script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+<script type="text/javascript">
+	(function() {
+		emailjs.init("user_hfWgmVm4gDBSrnDHxU9Q5");
+	})();
+</script>
+<script type="text/javascript">
 	function sendMail() {
-		var receiver = "wajisobri@gmail.com";
-		var sender = "wajisobri3@gmail.com"
-		var subject = $("#contact_form_subject").val();
-		var note = $("#contact_form_message").val();
-		var message = "Email:" + $("#contact_form_email").val() + " - Note:" + note;
 
-		Email.send({
-			Host : "smtp.elasticemail.com",
-			Username : "wajisobri3@gmail.com",
-			Password : "C735041ADDC5305AA4547857FCECA3D104DE",
-			To : receiver,
-			From : sender,
-			Subject : subject,
-			Body : message
-		}).then(
-		message => alert(message)
-		);
-	}
+		var templateParams = {
+			subject: $("#contact_form_subject").val(),
+			sender_name: $("#contact_form_name").val(),
+			sender_email: $("#contact_form_email").val(),
+			message: $("#contact_form_message").val()
+		};
+
+		emailjs.send('wajisobri3_email', 'bakwangroup_template2', templateParams)
+			.then(function(response) {
+				alert('Email has been sent!');
+				console.log('SUCCESS!', response.status, response.text);
+			}, function(error) {
+				alert('Email cannot be sent!');
+				console.log('FAILED...', error);
+			});
+		}
 </script>
 </head>
 

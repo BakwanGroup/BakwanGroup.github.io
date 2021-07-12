@@ -19,27 +19,31 @@
         src="http://code.jquery.com/jquery-3.3.1.js"
         integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
         crossorigin="anonymous"></script>
-<script src="https://smtpjs.com/v3/smtp.js"></script>
-<script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+<script type="text/javascript">
+	(function() {
+		emailjs.init("user_hfWgmVm4gDBSrnDHxU9Q5");
+	})();
+</script>
+<script type="text/javascript">
 	function sendMail() {
-		var receiver = "wajisobri@gmail.com";
-		var sender = "wajisobri3@gmail.com"
-		var place = $("#contact_form_place").val();
-		var note = $("#contact_form_note").val();
-		var message = "Email:" + $("#contact_form_email").val() + " - Place:" + place + " - Note:" + note;
 
-		Email.send({
-			Host : "smtp.elasticemail.com",
-			Username : "wajisobri3@gmail.com",
-			Password : "C735041ADDC5305AA4547857FCECA3D104DE",
-			To : receiver,
-			From : sender,
-			Subject : "New Recommendation Destination",
-			Body : message
-		}).then(
-		message => alert(message)
-		);
-	}
+		var templateParams = {
+			sender_name: $("#contact_form_name").val(),
+			sender_email: $("#contact_form_email").val(),
+			dest_message: $("#contact_form_place").val(),
+			note_message: $("#contact_form_note").val()
+		};
+
+		emailjs.send('wajisobri3_email', 'bakwangroup_template', templateParams)
+			.then(function(response) {
+				alert('Email has been sent!');
+				console.log('SUCCESS!', response.status, response.text);
+			}, function(error) {
+				alert('Email cannot be sent!');
+				console.log('FAILED...', error);
+			});
+		}
 </script>
 </head>
 
