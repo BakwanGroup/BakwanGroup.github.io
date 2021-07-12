@@ -60,6 +60,9 @@ $(function () {
             title: {
                 text: 'Total Wisata Berdasarkan Kategori'
             },
+            subtitle: {
+                text: 'Sumber : Wikipedia Indonesia'
+            },
             xAxis: {
                 categories: labelCategory,
             },
@@ -145,6 +148,9 @@ $(function () {
             },
             title: {
                 text: 'Persentase Total Wisata Berdasarkan Wilayah'
+            },
+            subtitle: {
+                text: 'Sumber : Wikipedia Indonesia'
             },
             tooltip: {
                 pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
@@ -234,7 +240,9 @@ $(function () {
             title: {
                 text: 'Rerata Skor Wisata Berdasarkan Wilayah'
             },
-        
+            subtitle: {
+                text: 'Sumber : Wikipedia Indonesia'
+            },
             xAxis: {
                 categories: keyOfScore,
                 crosshair: true
