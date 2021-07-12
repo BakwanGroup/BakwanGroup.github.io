@@ -17,7 +17,7 @@ $.getJSON('data/data.json', function(data) {
                 datatosort.push(value);
                 address = (typeof value.loc.address === 'undefined') ? "Tidak ada informasi terkait alamat" : value.loc.address;
                 prov = (typeof value.loc.prov === 'undefined') ? "Tidak ada" : value.loc.prov;
-                link = `https://pamudyaputra.github.io/bakwan/tubes/destination-detail.html?destination=${value.name}`;
+                link = `https://bakwangroup.github.io/destination-detail.html?destination=${value.name}`;
                 if(typeof value.reviewDistribution.oneStar === 'undefined') {
                 } else {
                     reviewCount = value.reviewDistribution.oneStar + value.reviewDistribution.twoStar +
@@ -75,7 +75,7 @@ $.getJSON('data/data.json', function(data) {
             datatosort.push(value);
             address = (typeof value.loc.address === 'undefined') ? "Tidak ada informasi terkait alamat" : value.loc.address;
             prov = (typeof value.loc.prov === 'undefined') ? "Tidak ada" : value.loc.prov;
-            link = `https://pamudyaputra.github.io/bakwan/tubes/destination-detail.html?destination=${value.name}`;
+            link = `https://bakwangroup.github.io/destination-detail.html?destination=${value.name}`;
             if(typeof value.reviewDistribution.oneStar === 'undefined') {
             } else {
                 reviewCount = value.reviewDistribution.oneStar + value.reviewDistribution.twoStar +
