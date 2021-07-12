@@ -47,7 +47,7 @@ $(function () {
  * It is not public web service that you can use
  * You'll need to find your own. We recommend http://www.maxmind.com
  */
-jQuery.getJSON('data/data.json', function( geo ) {
+jQuery.getJSON('data/maps.json', function( geo ) {
 
   var defaultMap = "usaLow";
   var countryMaps = {
