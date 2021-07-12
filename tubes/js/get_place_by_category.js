@@ -4,7 +4,7 @@ const category = urlParams.get('name');
 var element = "";
 var datatosort = [];
 
-document.title = `Search: ${category}`;
+document.title = `${category} || Bakwan`;
 $('#home_title_dest').html(`${category}`);
 
 $.getJSON("data/data.json", function(result){

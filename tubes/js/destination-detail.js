@@ -12,7 +12,7 @@ $.getJSON("data/data.json", function(result){
             map = placeItem[i].loc.url.split('/');
             maps = map[5];
             $("#dest_gmap").attr("src",`https://maps.google.com/maps?width=100%&height=100%&hl=en&q=${maps}&t=&z=14&ie=UTF8&iwloc=B&output=embed`);
-            document.title = placeItem[i].name;
+            document.title = placeItem[i].name + " || Bakwan";
             $("#destination_title").html(`${placeItem[i].name}`);
             $("#destination_rating").html(`
                                 <div class="rating_r rating_r_${parseInt(placeItem[i].totalScore, 10)} hotel_rating">

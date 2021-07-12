@@ -4,7 +4,7 @@ const loc = urlParams.get('location');
 var element = "";
 var datatosort = [];
 
-document.title = `Search: ${loc}`;
+document.title = `Loc: ${loc} || Bakwan`;
 $('#home_title_dest').html(`${loc}`);
 
 $.getJSON("data/data.json", function(result){

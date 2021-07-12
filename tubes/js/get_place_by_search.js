@@ -5,7 +5,7 @@ var element = "";
 var datatosort = [];
 
 console.log(destination);
-document.title = `Search: ${destination}`;
+document.title = `Search: ${destination} || Bakwan`;
 
 var expression = new RegExp(destination, "i");
 
