@@ -2,7 +2,7 @@
 var ProvValue = [];
 
 $.ajaxSetup({
-  headers: { 'Access-Control-Allow-Origin': '*' }
+  headers: { 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Headers': 'Origin, X-Requested-With, Content-Type, Accept' }
 });
 
 $(function () {
@@ -47,7 +47,7 @@ $(function () {
  * It is not public web service that you can use
  * You'll need to find your own. We recommend http://www.maxmind.com
  */
-jQuery.getJSON( "https://services.amcharts.com/ip/?v=xz6Z", function( geo ) {
+jQuery.getJSON('data/data.json', function( geo ) {
 
   var defaultMap = "usaLow";
   var countryMaps = {
