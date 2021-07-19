@@ -32,10 +32,14 @@ $.getJSON("data/data.json", function(result){
             else ratingTxt = "Good"
             $("#dest_rating_stat").html(`${ratingTxt}`);
 
-            reviewCount = placeItem[i].reviewDistribution.oneStar + placeItem[i].reviewDistribution.twoStar +
-                        placeItem[i].reviewDistribution.threeStar + placeItem[i].reviewDistribution.fourStar +
-                        placeItem[i].reviewDistribution.fiveStar;
-            $("#dest_review").html(`${reviewCount} reviews`);
+            if(typeof placeItem[i].reviewDistribution.oneStar === 'undefined') {
+                reviewCount = 0;
+            } else {
+                reviewCount = placeItem[i].reviewDistribution.oneStar + placeItem[i].reviewDistribution.twoStar +
+							placeItem[i].reviewDistribution.threeStar + placeItem[i].reviewDistribution.fourStar +
+							placeItem[i].reviewDistribution.fiveStar;
+            }
+            $("#dest_review").html(`${(reviewCount == 0) ? '-' : reviewCount} reviews`);
         }
     }
 });

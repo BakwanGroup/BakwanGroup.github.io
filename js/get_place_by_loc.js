@@ -25,6 +25,13 @@ $.getJSON("data/data.json", function(result){
             address = (typeof placeItem[i].loc.address === 'undefined') ? "Tidak ada informasi terkait alamat" : placeItem[i].loc.address;
             prov = (typeof placeItem[i].loc.prov === 'undefined') ? "Tidak ada" : placeItem[i].loc.prov;
             link = `https://bakwangroup.github.io/destination-detail.html?destination=${placeItem[i].name}`;
+            if(typeof placeItem[i].reviewDistribution.oneStar === 'undefined') {
+                reviewCount = 0;
+            } else {
+                reviewCount = placeItem[i].reviewDistribution.oneStar + placeItem[i].reviewDistribution.twoStar +
+							placeItem[i].reviewDistribution.threeStar + placeItem[i].reviewDistribution.fourStar +
+							placeItem[i].reviewDistribution.fiveStar;
+            }
             if(placeItem[i].totalScore > 4) ratingTxt = "Best";
             else if(placeItem[i].totalScore > 3) ratingTxt = "Very Good";
             else ratingTxt = "Good";
@@ -63,7 +70,7 @@ $.getJSON("data/data.json", function(result){
                                     <div class="offer_reviews">
                                         <div class="offer_reviews_content">
                                             <div class="offer_reviews_title">${ratingTxt}</div>
-                                            <div class="offer_reviews_subtitle">- reviews</div>
+                                            <div class="offer_reviews_subtitle">${(reviewCount == 0) ? '-' : reviewCount} reviews</div>
                                         </div>
                                         <div class="offer_reviews_rating text-center">${placeItem[i].totalScore}</div>
                                     </div>

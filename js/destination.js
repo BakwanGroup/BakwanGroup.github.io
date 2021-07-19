@@ -52,6 +52,7 @@ function SortOrder(prop,param) {
             prov = (typeof value.loc.prov === 'undefined') ? "Tidak ada" : value.loc.prov;
             link = `https://bakwangroup.github.io/destination-detail.html?destination=${value.name}`;
             if(typeof value.reviewDistribution.oneStar === 'undefined') {
+                reviewCount = 0;
             } else {
                 reviewCount = value.reviewDistribution.oneStar + value.reviewDistribution.twoStar +
                             value.reviewDistribution.threeStar + value.reviewDistribution.fourStar +
@@ -95,7 +96,7 @@ function SortOrder(prop,param) {
                                     <div class="offer_reviews">
                                         <div class="offer_reviews_content">
                                             <div class="offer_reviews_title">${ratingTxt}</div>
-                                            <div class="offer_reviews_subtitle">${reviewCount} reviews</div>
+                                            <div class="offer_reviews_subtitle">${(reviewCount == 0) ? '-' : reviewCount} reviews</div>
                                         </div>
                                         <div class="offer_reviews_rating text-center">${value.totalScore}</div>
                                     </div>
@@ -120,6 +121,7 @@ function SortOrderLoc(prop,param) {
             prov = (typeof value.loc.prov === 'undefined') ? "Tidak ada" : value.loc.prov;
             link = `https://bakwangroup.github.io/destination-detail.html?destination=${value.name}`;
             if(typeof value.reviewDistribution.oneStar === 'undefined') {
+                reviewCount = 0;
             } else {
                 reviewCount = value.reviewDistribution.oneStar + value.reviewDistribution.twoStar +
                             value.reviewDistribution.threeStar + value.reviewDistribution.fourStar +
@@ -163,7 +165,7 @@ function SortOrderLoc(prop,param) {
                                     <div class="offer_reviews">
                                         <div class="offer_reviews_content">
                                             <div class="offer_reviews_title">${ratingTxt}</div>
-                                            <div class="offer_reviews_subtitle">${reviewCount} reviews</div>
+                                            <div class="offer_reviews_subtitle">${(reviewCount == 0) ? '-' : reviewCount} reviews</div>
                                         </div>
                                         <div class="offer_reviews_rating text-center">${value.totalScore}</div>
                                     </div>
