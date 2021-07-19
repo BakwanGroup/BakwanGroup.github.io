@@ -72,7 +72,7 @@ $.getJSON("data/data.json", function(result){
                                             <div class="offer_reviews_title">${ratingTxt}</div>
                                             <div class="offer_reviews_subtitle">${(reviewCount == 0) ? '-' : reviewCount} reviews</div>
                                         </div>
-                                        <div class="offer_reviews_rating text-center">${placeItem[i].totalScore}</div>
+                                        <div class="offer_reviews_rating text-center">${(placeItem[i].totalScore == 0) ? '-' : placeItem[i].totalScore}</div>
                                     </div>
                                 </div>
                             </div>

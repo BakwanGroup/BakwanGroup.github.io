@@ -26,7 +26,7 @@ $.getJSON("data/data.json", function(result){
             $("a[id='destination_urladdress'][href='#']").attr('href', `${placeItem[i].loc.url}`);
             $("#destination_image").attr("src",`images/place/${placeItem[i].filename}`);
             $("#dest_web").attr("href",`http://${placeItem[i].website}`);
-            $("#dest_rating").html(`${placeItem[i].totalScore}`);
+            $("#dest_rating").html(`${(placeItem[i].totalScore == 0) ? '-' : placeItem[i].totalScore}`);
             if(placeItem[i].totalScore > 4) ratingTxt = "Best";
             else if(placeItem[i].totalScore > 3) ratingTxt = "Very Good";
             else ratingTxt = "Good"
